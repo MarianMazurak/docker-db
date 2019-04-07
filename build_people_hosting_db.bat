@@ -1,2 +1,3 @@
 @echo off
-docker build people-hosting-db -t people-hosting
+docker pull ubuntu:latest
+docker build people-hosting-db -t hosting
