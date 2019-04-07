@@ -5,15 +5,13 @@ MAINTAINER Bogdan Myslyvchuk & Marian Mazurak
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y openjdk-8-jdk \
+    apt-get install -y openjdk-8-jdk mc wget \
     git \
     maven && \
-    # midnight commander, to run type mc
-    mc && \
-    
-    wget && \
     apt-get clean;
-  
+
+ 
+ 
 # Fix certificate issues
 RUN apt-get update && \
     apt-get install ca-certificates-java && \
