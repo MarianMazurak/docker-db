@@ -1,2 +1,2 @@
 @echo off
-docker run -it hosting
+docker run -it people-hosting-db
